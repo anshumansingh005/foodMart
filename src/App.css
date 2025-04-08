@@ -29,6 +29,9 @@
   font-size: 18px;
   padding: 10px;
 }
+.nav-items > ul > li:hover {
+  cursor: pointer;
+}
 
 .res-card {
   width: 200px;

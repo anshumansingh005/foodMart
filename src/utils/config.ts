@@ -25,6 +25,54 @@ const resConfig = [
   },
   {
     info: {
+      id: "335436",
+      name: "RNR Biryani - Taste of 1953",
+      cloudinaryImageId: "ffjx34cigzjso9awbpay",
+      locality: "100 Feet Road",
+      areaName: "Indiranagar",
+      costForTwo: "₹350 for two",
+      cuisines: ["Biryani", "South Indian", "Kebabs"],
+      avgRating: 4.3,
+      parentId: "11620",
+      avgRatingString: "4.3",
+      totalRatingsString: "6.7K+",
+      promoted: true,
+
+      sla: {
+        deliveryTime: 36,
+        lastMileTravel: 4.4,
+        serviceability: "SERVICEABLE",
+        slaString: "35-40 mins",
+        lastMileTravelString: "4.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+    },
+  },
+  {
+    info: {
+      id: "229",
+      name: "Meghana Foods",
+      cloudinaryImageId: "iivuhjc2mswi9lublktf",
+      locality: "Koramangala",
+      areaName: "Koramangala",
+      costForTwo: "₹500 for two",
+      cuisines: ["Biryani", "Andhra", "South Indian", "Chinese", "Seafood"],
+      avgRating: 4.6,
+      parentId: "635",
+      avgRatingString: "4.6",
+      totalRatingsString: "181K+",
+      sla: {
+        deliveryTime: 28,
+        lastMileTravel: 1.4,
+        serviceability: "SERVICEABLE",
+        slaString: "25-30 mins",
+        lastMileTravelString: "1.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+    },
+  },
+  {
+    info: {
       id: "1013619",
       name: "Chinese Wok",
       cloudinaryImageId:
