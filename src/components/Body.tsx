@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import resConfig from "../utils/config";
 import RestaurantCard from "./RestaurantCard";
 export const Body: React.FC = () => {
-  let [listOfRestaurants, setListOfRestaurants] = useState(resConfig);
+  const URL = "https://github.com/anshumansingh005/";
+  let promise = fetch(URL);
+  console.log(promise);
+
+  const [listOfRestaurants, setListOfRestaurants] = useState(resConfig);
+  const handleFilterClick = () => {
+    const filteredRestaurants = listOfRestaurants.filter(
+      (res) => res.info.avgRating !== undefined && res.info.avgRating > 4
+    );
+
+    setListOfRestaurants(filteredRestaurants);
+  };
   return (
     <div className="body">
-      <button
-        className="search"
-        onClick={() => {
-          listOfRestaurants = listOfRestaurants.filter(
-            (res) => res.info.avgRating !== undefined && res.info.avgRating > 4
-          );
-
-          setListOfRestaurants(listOfRestaurants);
-        }}
-      >
+      <button className="search" onClick={handleFilterClick}>
         Filter
       </button>
       <div className="res-container">
